@@ -96,6 +96,14 @@ module.exports = {
       // please link the files into your node_modules/ and let module-resolution kick in.
       // Make sure your source files are compiled, as they will not be processed in any way.
       new ModuleScopePlugin(paths.appSrc, [paths.appPackageJson]),
+      new Webpack.ProvidePlugin({
+        //Popper: ['popper.js', 'default'],
+        //jQuery: 'jquery',
+        $: 'jquery',
+        //'window.jQuery': 'jquery',
+        //'window.$': 'jquery',
+        //'window.Tether': 'tether'
+    }),
     ],
   },
   module: {

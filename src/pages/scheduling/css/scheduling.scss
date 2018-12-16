@@ -2,19 +2,21 @@
 
 
 .main{
+
     text-align : center;
-    .header{
-        width: 100%;
-        overflow: hidden;
+    padding : 10px;
+
+    h2{
+        color: #2c346a;
     }
 
-    .body{
-        section {
-            padding: 23px
-        }
+    .disabled{
+        opacity : 0.3;
+        pointer-events: none;
     }
 
-    .buttonNext{
-        cursor: pointer
+    .price{
+        color: #565088;
+        margin : 20px 0;
     }
 }

@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import Header from '../../components/header'
 import { MDBBtn, MDBRow, MDBCol, MDBIcon } from "mdbreact";
 import { Link } from 'react-router-dom'
-
 import "./css/home.scss"
 
 
@@ -34,7 +33,7 @@ class Home extends Component {
                         </MDBRow>
                     </section>
                 </div>
-                <Link to="/">
+                <Link to="/agendamento">
                     <MDBBtn className="buttonNext" outline color="secondary">Agendar serviço</MDBBtn>
                 </Link>
             </div>
