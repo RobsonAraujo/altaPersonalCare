@@ -39,17 +39,11 @@ class NavbarPage extends Component {
                             <img className="logo" src={logo} />
                         </NavbarBrand>
                         <HamburgerToggler color="#2c346a" id="hamburger1" onClick={() => this.toggleSingleCollapse('collapse1')} />
-
-
                         <Collapse isOpen={this.state.collapse1} navbar>
                             <NavbarNav left>
                                 <NavItem active>
                                     <NavLink to="#!">Meus Agendamentos</NavLink>
                                 </NavItem>
-                                <NavItem>
-                                    <NavLink to="#!">Sobre</NavLink>
-                                </NavItem>
-
                             </NavbarNav>
                         </Collapse>
                     </Container>
